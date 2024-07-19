@@ -1,0 +1,145 @@
+.filterContainer {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255,0.4);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.tripType {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tripType button {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.75rem;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+}
+
+.tripType button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filterFields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.field {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  color: #666;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.extraOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.extraOptions button {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.75rem;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+}
+
+.extraOptions button:hover {
+  background-color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+  .tripType button,
+  .extraOptions button {
+    flex: 1 1 100%;
+  }
+
+  .field {
+    flex: 1 1 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .field {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+}
+
+@media (min-width: 901px) {
+  .filterContainer {
+    max-width: 1200px;
+    padding: 2rem;
+  }
+
+  .tripType,
+  .filterFields,
+  .extraOptions {
+    gap: 1rem;
+  }
+
+  .field {
+    flex: 1 1 calc(25% - 0.75rem);
+  }
+
+  .submitButton {
+    width: auto;
+    padding: 0.75rem 2rem;
+  }
+}

@@ -1,0 +1,90 @@
+/* Container for the entire page */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  filter: brightness(20px);
+  transition: filter 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);  
+  min-height: calc(100vh - 13px);
+}
+
+/* Header */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.form {
+
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 2000;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field input,
+.field select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Submit button */
+.submitButton {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Summary section */
+.summary {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.summary h2 {
+  margin-bottom: 15px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+.confirmButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background-color: #218838;
+}

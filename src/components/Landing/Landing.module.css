@@ -1,50 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 .main {
-  min-height: 100vh;
-  padding-top: 2rem;
-  background: rgba(0, 0, 50, 0.8);
-  backdrop-filter: blur(10px);
+  position: relative;
+  min-height: calc(100vh - 15px);
+  overflow: hidden;
+  
+}
+
+.main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* blend color */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+  /* blur effect */
+  filter: blur(10px);
+  /* bring background to front */
+  will-change: transform;
+  z-index: -1;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   color: white;
-  padding: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 
-.imageSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
 
-.imageWrapper {
-  margin-bottom: 1rem;
-  border-bottom: 20px solid #0088ff;
-  border-right: 15px solid #1f6dff;
-  border-radius: 12px;
- 
-}
 
 .contentSection {
   flex: 1;
-  padding-left: 2rem;
+  padding: 2.7rem;
   text-align: left;
+  background-color: rgb(255, 255, 255,0.6);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: rgb(255, 255, 255,0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+
+  }
+  max-width:600px ;
+  
 }
 
 .title {
   margin: 0;
   font-size: 3rem;
+  color:rgb(1, 20, 28);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; 
 }
 
 .description {
   margin: 1rem 0;
   font-size: 1.5rem;
+  color:rgb(1, 27, 39);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; 
 }
 
 .buttons {
@@ -75,8 +96,8 @@
 
 .secondaryButton {
   background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  color: rgb(2, 39, 69);
+  border: 1px solid rgb(0, 110, 255);
 }
 
 .secondaryButton:hover {
