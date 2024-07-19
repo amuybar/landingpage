@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react';
 import styles from './Landing.module.css';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 const FlightSearch = dynamic(() => import('../Search'));
 
@@ -35,7 +36,7 @@ export default function Landing() {
             Experience the best in air travel with KQAirline.
           </h2>
           <div className={styles.buttons}>
-            <button className={styles.primaryButton}>Book Ticket</button>
+            <Link href='/book' className={styles.primaryButton}>Book Ticket</Link>
             <button className={styles.secondaryButton}>Learn More</button>
           </div>
         </div>
