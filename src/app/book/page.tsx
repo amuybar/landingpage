@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import styles from './BookFlightPage.module.css';
 
-// Define types for form data
+
 interface FlightFormData {
   departure: string;
   arrival: string;

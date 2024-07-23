@@ -1,4 +1,4 @@
-/* Container for the entire page */
+
 .container {
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -9,13 +9,10 @@
   min-height: calc(100vh - 13px);
 }
 
-/* Header */
 .container h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-
-/* Form styling */
 .form {
 
   max-width: 600px;
@@ -43,7 +40,6 @@
   border-radius: 5px;
 }
 
-/* Submit button */
 .submitButton {
   padding: 15px;
   border: none;
@@ -58,7 +54,6 @@
   background-color: #0056b3;
 }
 
-/* Summary section */
 .summary {
   margin-top: 20px;
   padding: 20px;

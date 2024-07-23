@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 
 .main {
@@ -15,11 +15,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* blend color */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
-  /* blur effect */
   filter: blur(10px);
-  /* bring background to front */
   will-change: transform;
   z-index: -1;
 }
